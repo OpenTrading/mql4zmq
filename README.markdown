@@ -1,5 +1,17 @@
 # mql4zmq
 
+OTMql4Zmq - MQL4 bindings for ZeroMQ, the high-speed messaging protocol
+for asynchronous communications between financial and trading applications.
+https://github.com/OpenTrading/mql4zmq/
+
+This is a fork of the `pre-2.0.0` branch of:
+https://github.com/AustenConrad/mql4zmq/
+
+It is being updated for ZeroMQ 4.x and Mt4 > Build 600 to generate the DLLs for:
+https://github.com/OpenTrading/OTMql4Zmq/
+
+## Original Readme
+
 The goal of this project is to provide [MQL4](http://docs.mql4.com/ "MQL4 documentation homepage.") bindings for the [ZeroMQ](http://zeromq.org/ "ZeroMQ homepage.") networking library. 
 
 Licensed under the MIT License. See [LICENSE](https://github.com/AustenConrad/mql4zmq/blob/master/LICENSE) for more information.
