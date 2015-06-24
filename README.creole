@@ -13,7 +13,7 @@ https://github.com/OpenTrading/OTMql4Zmq/
 We plan on upgrading it to ZeroMQ 4.x and have started that process,
 but for now the version 4.0.4 code is not completely working. We
 are integrating in the changes from
-https://github.com/ungratefulson/mql4zmq/
+https://github.com/ungratefulson/mql4zmq/  -b MQ_610_ZMQ_4 
 but they are only a partial upgrade to ZeroMQ 4.x.
 We may make a v4.0.4 git branch to pull in the changes.
 

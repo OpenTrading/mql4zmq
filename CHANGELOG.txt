@@ -1,3 +1,8 @@
+commit e9515a89ccd56c8f54a515443c5ec44432a66858
+Date:   Wed Jun 24 18:57:22 2015 +0300
+
+    Added CHANGELOG.txt
+
 commit bde87df2d70565266b18d840b0a280fd32aba98c
 Date:   Wed Jun 24 18:54:03 2015 +0300
 
