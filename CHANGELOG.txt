@@ -1,0 +1,542 @@
+commit bde87df2d70565266b18d840b0a280fd32aba98c
+Date:   Wed Jun 24 18:54:03 2015 +0300
+
+    Renamed   mql4zmq.mqh to OTMql4Zmq.mqh and upgraded it from OTMt4Zmq
+
+commit da4e1d17ba4a143d239cccfca99319269e158aaa
+Date:   Wed Jun 24 18:42:48 2015 +0300
+
+    Checking dlls recompiled to ZeroMQ v 2.2.0 MSVC2010
+
+commit fa5cedfdfd9c2ba95fa690becedb5cf5788c2fac
+Date:   Tue Jun 23 11:34:01 2015 +0300
+
+    updated doc
+
+commit ffdd4d69d49bdc8d2900e082b3e71a4560470eb9
+Date:   Sun Jun 21 15:04:55 2015 +0300
+
+    Convertedt README to creole
+
+commit d516b4dcd3a4c2129ca3266314c9ac4c63b75419
+Date:   Sun Jun 21 13:32:46 2015 +0300
+
+    Updated Readme
+
+commit 19493dbc26635ac4459fee6cb01688cdc407fc08
+Date:   Mon Mar 3 15:47:56 2014 -0600
+
+    Added version notes.
+
+commit d9d4d930228d8749887a07993eb4ed53d4c9cd31
+Date:   Thu Nov 14 22:41:45 2013 -0600
+
+    Added processing confirmation messages when modifying or deleting an order.
+
+commit 0031b2d52913a5005b2582f9dc67e2e52823152e
+Date:   Mon Sep 23 13:33:39 2013 -0500
+
+    Corrected documentation. Removed unneeded debug.
+
+commit 72f3feb476bdbcf49dfe36d59aad47554bf29dd7
+Date:   Mon Sep 23 13:29:38 2013 -0500
+
+    Added support for updating pending order's open price.
+
+commit de4069846bbf1f00d62fd7c207671e587b0aa83d
+Date:   Mon Sep 16 19:47:37 2013 -0500
+
+    Changed licensing to MIT license.
+
+commit b47bf03585b73247a1365e73e27483a5c054cffd
+Date:   Mon Sep 16 19:35:41 2013 -0500
+
+    Fixed error 4108 when closing a pending order.
+
+commit 727f7c260c83c912454e21bf68075c9ba5b8036f
+Date:   Tue Jan 22 23:16:57 2013 -0600
+
+    fixed closing price slippage bug.
+
+commit 8a96a28ed9f28a266340def7e1bc967945f88cb9
+Date:   Tue Jan 22 18:41:00 2013 -0600
+
+    Added EMA to emitted output to simplify backtesting.
+
+commit bef012cc0c321559d7e15aa314b32ab62632f4c6
+Date:   Thu Dec 20 20:51:17 2012 -0600
+
+    corrected typo.
+
+commit af7ce852f704af42ba734d0c7c7521b722cc6077
+Date:   Thu Dec 20 20:45:18 2012 -0600
+
+    Added support for non-five digit brokers.
+
+commit 1004521bf8c53c24182ba0473d35a8b916cd1221
+Date:   Mon Dec 17 14:58:10 2012 -0800
+
+    Added MetaTrader server timestamp for when bridge comes online.
+    
+    This allows one to calculate time offsets between your server and your
+    broker's MetaTrader server.
+
+commit 499c1a489062098a0d2319351f921ac7b6a0cd24
+Date:   Fri Sep 21 14:13:28 2012 -0700
+
+    fixed typo
+
+commit 722eb87a744500082e8d75faf923731938b34b5b
+Date:   Fri Sep 21 14:10:21 2012 -0700
+
+    Added python example contributed by Keith K.
+
+commit e85b734c42e6f80f70ba4650ff03cea27b725970
+Date:   Thu Sep 20 10:05:49 2012 -0700
+
+    Updated download link for ZeroMQ.
+
+commit eeba7a1d0a30ee11f38a3236076b6b2993b99e62
+Date:   Wed Aug 29 12:09:27 2012 -0700
+
+    Added support for 'unset' messages. I.E. closing trades.
+
+commit dab73adf0ed3552d9ad9f48c7db336b39228180f
+Date:   Tue Aug 28 23:22:44 2012 -0700
+
+    Added handling of 'reset' orders. I.E. modifying of open order's take profit and stop loss values.
+
+commit 345b4e6c5175f072da1900e1ce0602fc37e3ab7a
+Date:   Tue Aug 28 16:28:09 2012 -0700
+
+    corrected order type error.
+
+commit 038cfd5d0c29350e52b795475970b87b560da02c
+Date:   Fri Aug 24 16:44:57 2012 -0700
+
+    changed :symbol to :pair
+
+commit 93103121e67a75e21cd804cf7bdda27784d45402
+Date:   Fri Aug 24 14:47:34 2012 -0700
+
+    bridge can live in an envrionment where multiple bridges exists all connected to the same central message pool.
+
+commit a232b7fae6d6c4c9473e3dc929b218b11425ab27
+Date:   Thu Aug 23 22:03:04 2012 -0700
+
+    Added create trade ability. Update and Close trades is still a work in progress.
+
+commit be73b6a36973b886cea2973a452f8a44a037f6f2
+Date:   Wed Aug 22 16:08:16 2012 -0700
+
+    Publish currently open orders alongside the tick data.
+
+commit c9e6d33ae7c85f208fb962384ab8aaeb34380cc4
+Date:   Mon Apr 2 12:28:28 2012 -0500
+
+    added runtime inputs for ZMQ protocol, remote server ip address, inbound port number, and outbound port number.
+
+commit 5b1b1e3171983486e10845d45b55fc6cc8918696
+Date:   Thu Mar 22 22:55:56 2012 -0500
+
+    Fixed type-casting mistake.
+
+commit 20e788259c27abcdbe75398e61b129a115cdf967
+Date:   Thu Mar 22 18:47:01 2012 -0500
+
+    Added ability to send a 'Draw' command to draw elemets on the current chart. Also fixed UID under-chomping error.
+
+commit 9ee133cdbf4b0415e272b6987d50c5f92a29b8fd
+Date:   Fri Mar 9 18:00:07 2012 -0600
+
+    fixed comment typo.
+
+commit fb286709a3f4c3c77953886c55290049efeb070b
+Date:   Wed Mar 7 00:48:14 2012 -0600
+
+    Changed the message channel and UID divider from ":" to "|" because some message keys are multi-level. I.E. => dataset:update:request
+
+commit c5ce95f5741346341324644ebd7566ffe95148da
+Date:   Mon Mar 5 17:36:14 2012 -0600
+
+    ip address change.
+
+commit 76dcfb923aafb09f6b3aebf92c95f1b47ce380a8
+Date:   Fri Mar 2 00:47:02 2012 -0600
+
+    switched connection type from bind to connect so that it can connect into the remote device.
+
+commit 012e07342384dbb975c3070850e8a143819f79e9
+Date:   Thu Feb 23 23:56:31 2012 -0600
+
+    typo corrected.
+
+commit dace18d904aa492c763104ab421267ad7649dbb7
+Date:   Thu Feb 23 23:55:01 2012 -0600
+
+    Updated examples README to note that the bridge example is still in development and here for reference only.
+
+commit c1bda97c4b953b689f87404d74518a7f31517743
+Date:   Thu Feb 23 23:49:15 2012 -0600
+
+    Initial Commit. BARELY STARTED. Beginnings of an example bridge.
+
+commit 5a3cb4d35fc3932e26c70e577f64f4d897406771
+Date:   Fri Feb 17 12:39:11 2012 -0600
+
+    Added disclaimer. Moved example section to the top.
+
+commit f1a0091b1b6d3f7b8d8991893fbc90adef115299
+Date:   Thu Feb 16 13:51:56 2012 -0600
+
+    improved readability.
+
+commit 299048fbf645d90e0786c00545e0298246ced4f5
+Date:   Thu Feb 16 13:50:59 2012 -0600
+
+    improved readability.
+
+commit 6bce8ecb502ac5467e1dcedc71cd8762dae3d8ec
+Date:   Thu Feb 16 13:49:23 2012 -0600
+
+    improved readability.
+
+commit 476c6a6cb3ae417878d9a14d8fff7f0e9c8543d0
+Date:   Thu Feb 16 13:47:20 2012 -0600
+
+    improved readability.
+
+commit e2208abecf1ae99152efde0f31f62db08c26a3c2
+Date:   Thu Feb 16 13:44:39 2012 -0600
+
+    improved readability.
+
+commit 5b52bb69e0bdfa2b36495846b713fab3467a52f0
+Date:   Thu Feb 16 13:44:02 2012 -0600
+
+    improved readability.
+
+commit 2bc3a03244339fda79201b5a09ff10d32ccc59cd
+Date:   Thu Feb 16 13:40:52 2012 -0600
+
+    improved readability.
+
+commit f232a50f7099ca73bc5772125ca7c5d3d71810e8
+Date:   Thu Feb 16 13:39:15 2012 -0600
+
+    improved readability.
+
+commit 91601170823654e0ee1b9b63ca3d7b1b11416388
+Date:   Thu Feb 16 13:22:06 2012 -0600
+
+    changed example output to classic Hello World.
+
+commit f379ead1d3b995ac44462a5932e17513b26f02ca
+Date:   Thu Feb 16 13:19:02 2012 -0600
+
+    added ruby example usage info.
+
+commit 24ec6d615258bbd5fe771c7fc3541297d7912d98
+Date:   Thu Feb 16 13:14:13 2012 -0600
+
+    corrected --help outputed usage examples.
+
+commit 9e88c4633e81acbf587607c6f5b64e2caead90ca
+Date:   Thu Feb 16 13:10:19 2012 -0600
+
+    curl example formatting fix.
+
+commit 534d5da57730719ce11134b5c8c17ff687f973dc
+Date:   Thu Feb 16 13:09:03 2012 -0600
+
+    added curl example.
+
+commit 0d248b97c73d15fd512a23efcc56b2de3db4e1a1
+Date:   Thu Feb 16 11:21:05 2012 -0600
+
+    Clarified info.
+
+commit dbf6fbabf55f47c4a829841e1adecac513389c7b
+Date:   Thu Feb 16 11:17:47 2012 -0600
+
+    Added note to build using release build environment. Fixed typo.
+
+commit 8c6bf9e58d545aa9104412497171324b785ceb39
+Date:   Thu Feb 16 03:29:17 2012 -0600
+
+    Install point update.
+
+commit ab8a40d447122e3b15a3176dd793e9747c14a4f2
+Date:   Thu Feb 16 03:04:01 2012 -0600
+
+    Switched app type to Console.
+
+commit 8c3aae8d5b66da8ad8fa15b12bfaa38faeeff911
+Date:   Thu Feb 16 02:01:56 2012 -0600
+
+    Added .def file include to release build. Reverted back to Dynamically linked .dll
+
+commit 3753f17b06d5beee2242a5efe15535dfa5549cd0
+Date:   Thu Feb 16 01:59:37 2012 -0600
+
+    Reverted to dynamically linked DLL as MetaTrader requires this.
+
+commit ad01be278eec0cae0f38bad62807e745910f2602
+Date:   Thu Feb 16 01:18:27 2012 -0600
+
+    updated install directions to reflect the change to statically linked mql4zmq.dll
+
+commit 6bc2c5c1d78d8e2cad0741c993f322d49c1d1404
+Date:   Thu Feb 16 01:15:29 2012 -0600
+
+    updated install directions to reflect the change to statically linked mql4zmq.dll
+
+commit 9489743f068ad9142ee73fb1a709d1aacb5c4dc4
+Date:   Thu Feb 16 01:14:59 2012 -0600
+
+    Switched to Release builds from Debug builds
+
+commit 36c8c372216e88350a13460569838169be52009e
+Date:   Thu Feb 16 00:39:36 2012 -0600
+
+    Recompiled to statically include dependencies.
+
+commit 456ea6669b742de462d609de238e3bbf182eb269
+Date:   Thu Feb 16 00:39:13 2012 -0600
+
+    Changed to statically linking mql4zmq.dll
+
+commit a5bb167ce6a399bd9b9128a41cd0c45298e38813
+Date:   Thu Feb 16 00:38:50 2012 -0600
+
+    Updated howto notes in regards to statically linking mql4zmq.dll
+
+commit a0d8e527135912dcb230909f538f3e854f154268
+Date:   Wed Feb 15 23:04:55 2012 -0600
+
+    Clarification in pre-compiled install directions.
+
+commit 7245c4bb90541bd05c0a9c403703a9b8e7d14979
+Date:   Wed Feb 15 22:24:19 2012 -0600
+
+    initial commit.
+
+commit 756930ef3d67fde43fad90accc4015b3cc19331a
+Date:   Wed Feb 15 22:09:39 2012 -0600
+
+    initial commit. ZeroMQ subscribe example in Ruby for testing the MQL4ZMQ EA.
+
+commit 4e0e325dd300472c96dbc6a3dc7cc6beb1dd7c3d
+Date:   Wed Feb 15 22:00:34 2012 -0600
+
+    initial commit. A ZeroMQ publish client to test the mql4zmq EA
+
+commit 737ac35a3bb070ccc226bf0aa3c1bb58839169ba
+Date:   Wed Feb 15 18:10:17 2012 -0600
+
+    Examples link added. General formating fixes.
+
+commit 96ab09e5d5f2b1f6d702178c20a7fbacfb187141
+Date:   Wed Feb 15 18:07:26 2012 -0600
+
+    more formating fixes.
+
+commit 12d167202dfe69082f643f1b20f16790fa5fbe82
+Date:   Wed Feb 15 18:04:05 2012 -0600
+
+    more formating fixes.
+
+commit fe5612e921287b1bfa632457316d729a7c2661f4
+Date:   Wed Feb 15 18:02:38 2012 -0600
+
+    formatting fixes.
+
+commit 7a0f9fcb5cca9045c1f1bd4ff0f32460208af73b
+Date:   Wed Feb 15 18:00:44 2012 -0600
+
+    formatting fix.
+
+commit d798b79fb270f74e862dbfdc22a20d8495418121
+Date:   Wed Feb 15 17:41:45 2012 -0600
+
+    ZeroMQ 2.1.11 MQL4 bindings precompiled for Windows 64-bit.
+
+commit 2688f493c2772f708e63784682c0fc070b419376
+Date:   Wed Feb 15 17:40:24 2012 -0600
+
+    Pre-compiled Windows 64-bit ZeroMQ 2.1.11 library.
+
+commit 8679a69e5eccf07ab63698cda0682d7e144cc8a5
+Date:   Wed Feb 15 17:39:01 2012 -0600
+
+    Pre-compiled instructions corrected.
+
+commit d3277c57b2632a1811c470ea0ca86bca4c1ee3f9
+Date:   Wed Feb 15 17:36:01 2012 -0600
+
+    example use of ZeroMQ publish and subscribe using both "C" level API exposed functions as well as ZHelper level API exposed fucntions.
+
+commit 33fdafbeea281538c050e2fbeebb59d01c57d205
+Date:   Wed Feb 15 17:34:16 2012 -0600
+
+    initial commit. mql4zmq.dll code.
+
+commit c2ead7ee127e467c323a01e11212c640b92df577
+Date:   Wed Feb 15 17:33:24 2012 -0600
+
+    Visual C++ project for mql4zmq.dll
+
+commit 792d2681027c99d9d7cca147ca176f404677487d
+Date:   Wed Feb 15 17:32:32 2012 -0600
+
+    Complete rewrite to wrap our new binding mql4zmq.dll instead of libzmq.dll directly. This is because libzmq.dll exports functions using __cdecl instead of __stdcall which MetaTrader needs.
+
+commit 6ae097afa2d67bb17a8e88986af5fca83413e556
+Date:   Wed Feb 15 17:28:40 2012 -0600
+
+    Rewritten for building within ZeroMQ's solution. Also, added howto for use of the pre-compiled libraries.
+
+commit 0181d241376f563dd03fa3d9874e64c641860e48
+Date:   Wed Feb 15 17:27:27 2012 -0600
+
+    No Longer needed here.
+
+commit f4c6ba4ccc4e49c8dcc9683dd9634d83bd9e68cd
+Date:   Wed Feb 15 17:10:31 2012 -0600
+
+    Ignore Visual C++ build Debug directory
+
+commit ab37301580a76609e9f46cb382abd3ff864b4b04
+Date:   Thu Sep 15 22:25:47 2011 -0500
+
+    changed zmq_socket type to int so that it has a return type.
+
+commit 68666b4ac4ab14a2abda0ccd6cc657c21f4bcb47
+Date:   Thu Sep 15 22:21:30 2011 -0500
+
+    fixed ZMQ_VERSION definition.
+
+commit 9cfb9dd8e02f67c711c9043c426ff2fbefb6d01f
+Date:   Thu Sep 15 22:06:49 2011 -0500
+
+    Added note about where to put libzmq.dll file.
+
+commit 3ed41c4c2b9ff589369c5f59966f9798cbb64307
+Date:   Thu Sep 15 22:03:00 2011 -0500
+
+    Reorganized layout to match ZeroMQ's original zmq.h header file. Also added a few more definitions for socket types, etc.
+
+commit 1bcf2447fc8ebe1de494b1016fba44b16a847ffc
+Date:   Thu Sep 15 22:01:10 2011 -0500
+
+    added note about original zmq.h file.
+
+commit 3bb4c8af151288dad64a6cbb751c0a3bc3d7b9de
+Date:   Wed Sep 14 18:40:41 2011 -0500
+
+    Added the ZeroMQ API calls per http://api.zeromq.org
+
+commit 5b57def65e1978c71fa7531148a39d74ddc7e91c
+Date:   Wed Sep 14 18:39:46 2011 -0500
+
+    Updated install instructions.
+
+commit 6c2b39fc00a843a9557affbc2a07fede9cc43b1d
+Date:   Mon Sep 5 12:09:36 2011 -0500
+
+    initial commit
+
+commit b383fbcf1c41a31fb095c07206d35875b2834ae4
+Date:   Mon Sep 5 11:57:36 2011 -0500
+
+    improved formatting
+
+commit 84450a4a6411b3868ca83accffc1ca601d17ca43
+Date:   Mon Sep 5 11:55:34 2011 -0500
+
+    improved formatting
+
+commit 4d78c7f2c6b9e62d01b107abbc0b786ea9221de4
+Date:   Mon Sep 5 11:54:47 2011 -0500
+
+    add 32-bit instructions.
+
+commit 97058cf85d0dcac32b82bdf373e21a272627839f
+Date:   Mon Sep 5 11:51:28 2011 -0500
+
+    improved formatting
+
+commit ae45c665cd8a7087b3d23f17bedadc4fbe94d838
+Date:   Mon Sep 5 11:49:31 2011 -0500
+
+    added install step 3
+
+commit 97938a36903a31896ee096fe47057b1430d93e41
+Date:   Mon Sep 5 11:41:19 2011 -0500
+
+    ignore the zeromq library folder
+
+commit d5aee82669ad13bf937e20bef8091efb4cbb968e
+Date:   Mon Sep 5 11:28:48 2011 -0500
+
+    improved formatting
+
+commit 8d5cb15a6edc84a109e5193617170ec44bc5eee3
+Date:   Mon Sep 5 11:27:25 2011 -0500
+
+    improved formatting
+
+commit 6515e619518b071e971caf24bc850d790a6457bb
+Date:   Mon Sep 5 11:25:04 2011 -0500
+
+    improved formatting
+
+commit eae089fd332e3d1e356b961cfd93fed77d474192
+Date:   Mon Sep 5 11:24:33 2011 -0500
+
+    improved formatting
+
+commit 2bace3c617aa176f8e6b1f2396b80ff99e0710b0
+Date:   Mon Sep 5 11:21:50 2011 -0500
+
+    improved formatting
+
+commit bffc8e088457839c39d5c60435e530e6f288c63f
+Date:   Mon Sep 5 11:17:54 2011 -0500
+
+    improved formatting
+
+commit 37c18ae154ed560c72b5064801ca482902041d19
+Date:   Mon Sep 5 11:14:17 2011 -0500
+
+    changed README to README.markdown
+
+commit 20e177a1b361ad8c8719a9a7a4ed6a654de06808
+Date:   Mon Sep 5 11:10:57 2011 -0500
+
+    changed README to README.markdown
+
+commit e840329ee855f22f74d249b202f112d5d7167510
+Date:   Mon Sep 5 11:06:00 2011 -0500
+
+    link correction
+
+commit 3510c28b4e14d59d6900c1eb25383e3e9fa45ff2
+Date:   Mon Sep 5 11:03:20 2011 -0500
+
+    basic info added
+
+commit f1d13079d851a44747d2d7f4a68e1ef068534dd6
+Date:   Mon Sep 5 10:59:30 2011 -0500
+
+    initial commit
+
+commit 96f0dc7ebe26c47805a15e8e5716a1913e67a0a9
+Date:   Mon Sep 5 10:55:03 2011 -0500
+
+    inital sync
+
+commit 043112c34b3d23c4f354313272732e7d54d340a6
+Date:   Mon Sep 5 10:18:26 2011 -0500
+
+    initial commit

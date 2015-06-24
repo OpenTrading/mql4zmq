@@ -118,22 +118,31 @@ project to the solution. To do this:
 ==== Installing the Build From Source
 
 Once all 8 projects within the solution have completed building, we need to
-copy the files the MetaTrader needs to the location it needs them as follows:
+copy the files the MetaTrader needs to the location it needs them as follows.
+
+Make the following 3 directories if they don't aleady exist:
+* {{{c:\Program Files\[metatrader directory]\MQL4\Experts\OTMql4}}}
+* {{{c:\Program Files\[metatrader directory]\MQL4\Include\OTMql4}}}
+* {{{c:\Program Files\[metatrader directory]\MQL4\Libraries\OTMql4}}}
+
+This will help make this project compatible with other OpenTrader projects,
+and will simplify the release-packaging later. Also by giving files different names
+from Austen Conrad, we help avoid collisions in case someone has both projects.
 
 {{{
-[zeromq-2.2.0]\builds\msvc\Release\mql4zmq.dll
-=> c:\Program Files\[metatrader directory]\MQL4\Libraries\mql4zmq.dll
+zeromq-2.2.0\builds\msvc\Release\mql4zmq.dll
+=> c:\Program Files\[metatrader directory]\MQL4\Libraries\OTMql4\mql4zmq.dll
 
-[zeromq-2.2.0]\lib\libzmq.dll
+zeromq-2.2.0\lib\libzmq.dll
 => c:\Windows\SysWOW64\libzmq.dll or
 => c:\Windows\System32\libzmq.dll or
 whatever the windows system library is for your version of Windows.
 
-[zeromq-2.2.0]\builds\msvc\mql4zmq\mql4zmq.mqh 
-=> c:\Program Files\[metatrader directory]\MQL4\Include\mql4zmq.mqh	
+zeromq-2.2.0\builds\msvc\mql4zmq\OTMql4Zmq.mqh
+=> c:\Program Files\[metatrader directory]\MQL4\Include\OTMql4\OTMql4Zmq.mqh	
 
-[zeromq-2.2.0]\builds\msvc\mql4zmq\examples\mql4zmq.mq4 
-=> c:\Program Files\[metatrader directory]\MQL4\Experts\mql4zmq.mq4
+zeromq-2.2.0\builds\msvc\mql4zmq\examples\mql4zmq.mq4 
+=> c:\Program Files\[metatrader directory]\MQL4\Experts\OTMql4\mql4zmq.mq4
 }}}
 
 6. You are now ready to open up Metatrader, attach the example {{{mql4zmq}}} expert
@@ -155,18 +164,18 @@ de-select "Confirm DLL Function Calls".
 2. Copy the following files to the following locations for MetaTrader:
 {{{
 mql4zmq\pre-compiled\mql4zmq.dll 
-=> c:\Program Files\[metatrader directory]\MQL4\Libraries\mql4zmq.dll
+=> c:\Program Files\[metatrader directory]\MQL4\Libraries\OTMql4\mql4zmq.dll
 
 mql4zmq\pre-compiled\libzmq.dll 
 => c:\Windows\SysWOW64\libzmq.dll or
 => c:\Windows\System32\libzmq.dll or
-whatever the windows system library is for your version of Windows.
+whatever the windows system directory is for your version of Windows.
 
-mql4zmq\mql4zmq.mqh 
-=> c:\Program Files\[metatrader directory]\MQL4\Include\mql4zmq.mqh
+mql4zmq\OTMql4Zmq.mqh 
+=> c:\Program Files\[metatrader directory]\MQL4\Include\OTMql4\OTMql4Zmq.mqh
 
 mql4zmq\examples\mql4zmq.mq4 
-=> c:\Program Files\[metatrader directory]\MQL4\Experts\mql4zmq.mq4
+=> c:\Program Files\[metatrader directory]\MQL4\Experts\OTMql4\mql4zmq.mq4
 }}}
 
 3. You are now ready to open up Metatrader, attach the example
