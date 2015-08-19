@@ -13,7 +13,7 @@ https://github.com/OpenTrading/OTMql4Zmq/
 We plan on upgrading it to ZeroMQ 4.x and have started that process,
 but for now the version 4.0.4 code is not completely working. We
 are integrating in the changes from
-https://github.com/ungratefulson/mql4zmq/  -b MQ_610_ZMQ_4 
+https://github.com/ungratefulson/mql4zmq/  {{{-b MQ_610_ZMQ_4 }}}
 but they are only a partial upgrade to ZeroMQ 4.x.
 We may make a v4.0.4 git branch to pull in the changes.
 
@@ -22,10 +22,15 @@ and we want a test suite in place before we do. There is no reason that
 this code should not upgrade easily, but as ZeroMQ is backwards compatible
 with version 2.2.0, there is no immediate need to upgrade.
 
-**DO NOT USE THIS CODE:** this a fork just to document the changes we made in:
-https://github.com/OpenTrading/OTMql4Zmq/
+As of now the code is working fine, and the DLLs are being used by:
+https://github.com/OpenTrading/OTMql4Zmq which is being used by
+https://github.com/OpenTrading/OpenTrader
 
-==== Version notes:
+Note that we use a different include header file {{{OTMql4Zmq.mqh}}}
+which has a lot of changes from the legacy {{{mql4zmq.mqh}}}, and
+these changes can be very important.
+
+==== Version Notes
 
 This code is for MetaTrader build >600.
 If you are using MetaTrader build 509 or earlier, use

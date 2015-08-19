@@ -40,7 +40,7 @@ int mql4zmq_msg_init_data (int &msg[], uchar &data[], int iSize);
 int mql4zmq_msg_close (int &msg[]);
 int mql4zmq_msg_move (int dest, int src);
 int mql4zmq_msg_copy (int dest, int src);
-//? was string
+// was string
 int mql4zmq_msg_data (int &msg[]);
 int mql4zmq_msg_size (int &msg[]);
 
@@ -258,6 +258,7 @@ string zmq_msg_data (int &msg[]) {
 	// The following assumes that the DLL has used LocalAlloc
 	// (or an indirect equivalent). If not,
 	// then the following line may not fix the leak, and may even cause a crash.
+	//?
 	LocalFree(iRecvPtr);
     } else {
 	uMessage = uAnsi2Unicode(iRecvPtr);
@@ -360,10 +361,10 @@ string s_recv (int socket, int flags=0) {
 
     // if message length is 0, leave.
     if (iMessLen < 1) {
-	vTrace("s_recv: Message has zero length.");
+	//vTrace("s_recv: Message has zero length.");
  	return("");
     }
-    vTrace("s_recv: lstrlenA: "+iMessLen);
+    //vTrace("s_recv: lstrlenA: "+iMessLen);
 /*! replace with uAnsi2Unicode
 
     //vTrace("Create a uchar[] array whose size is the string length (plus terminator)");
