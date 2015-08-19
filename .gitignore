@@ -1,5 +1,8 @@
 Debug
 
+# visual studio
+mql4zmq.sdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
